@@ -32,7 +32,7 @@ android {
 		}
   }
   defaultConfig {
-    applicationId 'com.mariogravel'
+    applicationId 'com.mariogravel.charlo'
     minSdkVersion 21
     targetSdkVersion 36
     versionCode 1
@@ -142,7 +142,7 @@ tasks.register('run', Exec) {
   }
 
   def adb = path + "/platform-tools/adb"
-  commandLine "$adb", 'shell', 'am', 'start', '-n', 'com.mariogravel/com.mariogravel.android.AndroidLauncher'
+  commandLine "$adb", 'shell', 'am', 'start', '-n', 'com.mariogravel.charlo/com.mariogravel.charlo.android.AndroidLauncher'
 }
 
 eclipse.project.name = appName + "-android"

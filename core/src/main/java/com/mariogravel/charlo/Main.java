@@ -1,4 +1,4 @@
-package com.mariogravel;
+package com.mariogravel.charlo;
 
 import com.badlogic.gdx.Game;
 

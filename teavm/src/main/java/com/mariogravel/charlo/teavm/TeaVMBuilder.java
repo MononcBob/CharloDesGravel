@@ -1,8 +1,9 @@
-package com.mariogravel.teavm;
+package com.mariogravel.charlo.teavm;
 
 import com.github.xpenatan.gdx.teavm.backends.shared.config.AssetFileHandle;
 import com.github.xpenatan.gdx.teavm.backends.shared.config.compiler.TeaCompiler;
 import com.github.xpenatan.gdx.teavm.backends.web.config.backend.WebBackend;
+
 import java.io.File;
 import org.teavm.tooling.TeaVMSourceFilePolicy;
 import org.teavm.tooling.sources.DirectorySourceFileProvider;
@@ -29,7 +30,7 @@ public class TeaVMBuilder {
                 .setJettyPort(8080)
         )
             .addAssets(new AssetFileHandle("../assets"))
-            
+
             .setOptimizationLevel(debug ? TeaVMOptimizationLevel.SIMPLE : TeaVMOptimizationLevel.ADVANCED)
             .setMainClass(TeaVMLauncher.class.getName())
             .setObfuscated(!debug)

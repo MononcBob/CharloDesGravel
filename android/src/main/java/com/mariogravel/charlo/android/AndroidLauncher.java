@@ -1,10 +1,10 @@
-package com.mariogravel.android;
+package com.mariogravel.charlo.android;
 
 import android.os.Bundle;
 
 import com.badlogic.gdx.backends.android.AndroidApplication;
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
-import com.mariogravel.Main;
+import com.mariogravel.charlo.Main;
 
 /** Launches the Android application. */
 public class AndroidLauncher extends AndroidApplication {
